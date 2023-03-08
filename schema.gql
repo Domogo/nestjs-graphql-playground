@@ -1,0 +1,25 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CreateSportActivityDto {
+  id: ID!
+  name: String!
+  ageGroup: String!
+  description: String!
+}
+
+type Query {
+  hello: String!
+  sportActivities: [CreateSportActivityDto!]!
+}
+
+type Mutation {
+  createSportActivity(input: SportActivityInput!): CreateSportActivityDto!
+}
+
+input SportActivityInput {
+  name: String!
+  ageGroup: String!
+  description: String!
+}
